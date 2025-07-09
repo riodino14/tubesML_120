@@ -17,7 +17,8 @@ Aplikasi web memungkinkan pengguna untuk memasukkan nilai fitur-fitur rumah dan 
 
 *Contoh Tampilan Aplikasi Streamlit:*
 
-![Demo Aplikasi]([Screenshot atau GIF demo aplikasi Anda sendiri])
+![image](https://github.com/user-attachments/assets/606d7a7d-d62a-494b-a17d-caf0a473b4c0)
+
 
 ---
 
@@ -125,8 +126,8 @@ Untuk menjalankan aplikasi ini di komputer Anda, ikuti langkah-langkah berikut:
 ### 1\. Clone Repositori
 
 ```bash
-git clone [https://github.com/](https://github.com/)[USERNAME_ANDA]/[NAMA_REPO_ANDA].git
-cd [NAMA_REPO_ANDA]
+git clone [https://github.com/](https://github.com/)[riodino14]/[tubesML_120].git
+cd [tubesML_120]
 ```
 
 ### 2\. Buat Virtual Environment (Direkomendasikan)
@@ -166,9 +167,9 @@ Aplikasi akan terbuka secara otomatis di browser Anda pada alamat `http://localh
 
 Proyek ini dikerjakan oleh:
 
-  - Riodino Raihan - [Link Profil GitHub Anda]
-  - Faiq Misbah Yazdi - [Link Profil GitHub Anda]
-  - Puguh Aiman - [Link Profil GitHub Anda]
+  - Riodino Raihan 
+  - Faiq Misbah Yazdi 
+  - Puguh Aiman 
 
 ## 📜 Lisensi
 
