@@ -17,7 +17,13 @@ Aplikasi web memungkinkan pengguna untuk memasukkan nilai fitur-fitur rumah dan 
 
 *Contoh Tampilan Aplikasi Streamlit:*
 
+
 ![image](https://github.com/user-attachments/assets/606d7a7d-d62a-494b-a17d-caf0a473b4c0)
+
+
+Untuk akses model streamlit, [klik di sini](https://tubesml120-if-46-04.streamlit.app/).
+
+Untuk melihat notebook Google Collab, [klik di sini](https://colab.research.google.com/drive/1RZ21QCm3jd33wZSMfSxc_mB36KP6dgcB?usp=sharing).
 
 
 ---
