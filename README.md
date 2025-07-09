@@ -1,4 +1,6 @@
 
+
+
 # Prediksi Harga Rumah Boston dengan Model Machine Learning (from Scratch)
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)
@@ -9,12 +11,13 @@ Proyek ini merupakan implementasi *end-to-end* untuk memprediksi harga rumah di 
 
 Model terbaik kemudian di-deploy ke dalam sebuah aplikasi web interaktif menggunakan **Streamlit**.
 
-###  Demo Aplikasi Interaktif
+### 🛠️ Demo Aplikasi Interaktif
 
 Aplikasi web memungkinkan pengguna untuk memasukkan nilai fitur-fitur rumah dan mendapatkan prediksi harga secara *real-time*.
 
+*Contoh Tampilan Aplikasi Streamlit:*
 
-*(Catatan: Ganti gambar di atas dengan screenshot aplikasi Anda sendiri)*
+![Demo Aplikasi]([Screenshot atau GIF demo aplikasi Anda sendiri])
 
 ---
 
@@ -83,16 +86,19 @@ Setelah melalui proses tuning dan validasi, **AdaBoost Regressor** terpilih seba
     'min_samples_split': 10,
     'min_samples_leaf': 1
 }
-```
-Metrik Evaluasi Final:
-Metrik	Nilai
-Test R² Score	0.87
-Test RMSE	3.10 (setara ~$3,100)
-Rata-rata R² (Cross-Val)	0.85
-Train R² Score	0.97
-Train RMSE	1.63
+````
 
-Analisis:
+#### Metrik Evaluasi Final:
+
+| Metrik                  | Nilai            |
+|-------------------------|------------------|
+| Test R² Score           | 0.87             |
+| Test RMSE               | 3.10 (\~$3,100)   |
+| Rata-rata R² (Cross-Val) | 0.85             |
+| Train R² Score          | 0.97             |
+| Train RMSE              | 1.63             |
+
+#### Analisis:
 
 Model akhir mampu menjelaskan 87% varians pada data uji yang belum pernah dilihat sebelumnya.
 
@@ -100,95 +106,72 @@ Rata-rata kesalahan prediksi (RMSE) pada data uji adalah $3,100, yang merupakan 
 
 Performa yang kuat pada data validasi (rata-rata R² 0.85) menunjukkan bahwa model ini robust dan tidak mengalami overfitting yang parah.
 
-📁 Struktur File
-Generated code
+## 📁 Struktur File
+
+```
 .
-├── app.py              # File utama aplikasi Streamlit
-├── adaboost_model.py   # Berisi kelas custom untuk DecisionTree dan AdaBoost
-├── adaboost_model.pkl  # File model akhir yang telah dilatih
-├── scaler.pkl          # File scaler yang digunakan untuk transformasi data
-├── requirements.txt    # Daftar dependensi/library yang dibutuhkan
-└── README.md           # File dokumentasi ini
-IGNORE_WHEN_COPYING_START
-content_copy
-download
-Use code with caution.
-IGNORE_WHEN_COPYING_END
-🚀 Cara Menjalankan Proyek Secara Lokal
+├── app.py                   # File utama aplikasi Streamlit
+├── adaboost_model.py        # Berisi kelas custom untuk DecisionTree dan AdaBoost
+├── adaboost_model.pkl       # File model akhir yang telah dilatih
+├── scaler.pkl               # File scaler yang digunakan untuk transformasi data
+├── requirements.txt         # Daftar dependensi/library yang dibutuhkan
+└── README.md                # File dokumentasi ini
+```
+
+## 🚀 Cara Menjalankan Proyek Secara Lokal
 
 Untuk menjalankan aplikasi ini di komputer Anda, ikuti langkah-langkah berikut:
 
-Clone Repositori
+### 1\. Clone Repositori
 
-Generated bash
-git clone https://github.com/[USERNAME_ANDA]/[NAMA_REPO_ANDA].git
+```bash
+git clone [https://github.com/](https://github.com/)[USERNAME_ANDA]/[NAMA_REPO_ANDA].git
 cd [NAMA_REPO_ANDA]
-IGNORE_WHEN_COPYING_START
-content_copy
-download
-Use code with caution.
-Bash
-IGNORE_WHEN_COPYING_END
+```
 
-Buat Virtual Environment (Direkomendasikan)
+### 2\. Buat Virtual Environment (Direkomendasikan)
 
-Generated bash
+```bash
 python -m venv venv
-source venv/bin/activate  # Untuk Windows: venv\Scripts\activate
-IGNORE_WHEN_COPYING_START
-content_copy
-download
-Use code with caution.
-Bash
-IGNORE_WHEN_COPYING_END
+source venv/bin/activate   # Untuk Windows: venv\Scripts\activate
+```
 
-Instal Dependensi
-Pastikan Anda memiliki file requirements.txt dengan isi sebagai berikut, lalu jalankan perintah di bawah.
+### 3\. Instal Dependensi
 
-Generated code
+Pastikan Anda memiliki file `requirements.txt` dengan isi sebagai berikut:
+
+```
 # requirements.txt
 streamlit
 numpy
 pandas
 scikit-learn
-IGNORE_WHEN_COPYING_START
-content_copy
-download
-Use code with caution.
-IGNORE_WHEN_COPYING_END
-Generated bash
+```
+
+Lalu, jalankan perintah di bawah:
+
+```bash
 pip install -r requirements.txt
-IGNORE_WHEN_COPYING_START
-content_copy
-download
-Use code with caution.
-Bash
-IGNORE_WHEN_COPYING_END
+```
 
-Jalankan Aplikasi Streamlit
+### 4\. Jalankan Aplikasi Streamlit
 
-Generated bash
+```bash
 streamlit run app.py
-IGNORE_WHEN_COPYING_START
-content_copy
-download
-Use code with caution.
-Bash
-IGNORE_WHEN_COPYING_END
+```
 
-Aplikasi akan terbuka secara otomatis di browser Anda.
+Aplikasi akan terbuka secara otomatis di browser Anda pada alamat `http://localhost:8501`.
 
-🧑‍💻 Anggota Tim
+## 🧑‍💻 Anggota Tim
 
 Proyek ini dikerjakan oleh:
 
-Riodino Raihan - Profil GitHub (Ganti dengan link profil yang benar)
+  - Riodino Raihan - [Link Profil GitHub Anda]
+  - Faiq Misbah Yazdi - [Link Profil GitHub Anda]
+  - Puguh Aiman - [Link Profil GitHub Anda]
 
-Faiq Misbah Yazdi - Profil GitHub (Ganti dengan link profil yang benar)
+## 📜 Lisensi
 
-Puguh Aiman - Profil GitHub (Ganti dengan link profil yang benar)
+Proyek ini dilisensikan di bawah [MIT License](https://opensource.org/licenses/MIT).
 
-📜 Lisensi
-
-Proyek ini dilisensikan di bawah MIT License.
 
